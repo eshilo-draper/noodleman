@@ -1,0 +1,48 @@
+<!--Ethan Shilo-Draper CIS-1151-T1-->
+<!DOCTYPE=html>
+<html>
+<head>
+	<meta name="description" content="Mr.Noodleman Webcomic">
+	<meta name="author" content="Ethan Shilo-Draper">
+	<meta name="keywords" content="webcomic,comic,story,surreal,art">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mr.Noodleman</title>
+	<link rel="stylesheet" href="../noodleman.css">
+	<link rel="icon" href="../images/icon.png" type="../image/x-icon">
+	<script type="text/javascript">
+		var chapterNum = 1; //put number of chapter here
+		var totalPanels = 5; // put number of panels in chapter here
+		function initiatepanel() {
+			document.getElementById("panel").src="../images/panels/chapter" + chapterNum + "/panel1.png";
+		}
+		var panelNum = 1;
+		function incrementpanel(a) {
+			if((panelNum + a >= 1) && (panelNum + a <= totalPanels)) {
+				panelNum = panelNum + a;
+				document.getElementById("panel").src="../images/panels/chapter" + chapterNum + "/panel" + panelNum + ".png";
+				document.getElementById("pagenum").innerHTML="- " + panelNum + " -";
+			}
+		}
+	</script>
+</head>
+<body onload="initiatepanel()">
+	<div id="banner">
+		<img id="small" src="../images/Logo_Small_NOT_FINAL.jpg" alt="Mr. Noodleman" align=left>
+		<h1>Chapter 1 &mdash; Pilot</h1>
+	</div>
+	<object data="../nav.html" width="85%"></object>
+	<main>
+		<div id="content">
+			<img id="panel" src="../images/placeholder.jpg"></img> <!--NOTE TO SELF: correct dimensions of placeholder-->
+			<div id="prevpanel" onclick="incrementpanel(-1)">
+			</div>
+			<div id="nextpanel" onclick="incrementpanel(1)">
+			</div>
+			<p id="pagenum">- 1 -</p>
+		</div>
+	</main>
+<footer>
+	<p>copyright &copy;2019 Ethan Shilo-Draper</p>
+</footer>
+</body>
+</html>

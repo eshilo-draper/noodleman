@@ -1,0 +1,35 @@
+<!--Ethan Shilo-Draper CIS-1151-T1-->
+<!DOCTYPE=html>
+<html>
+<head>
+	<meta name="description" content="Mr.Noodleman Webcomic">
+	<meta name="author" content="Ethan Shilo-Draper">
+	<meta name="keywords" content="webcomic,comic,story,surreal,art">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mr.Noodleman</title>
+	<link rel="stylesheet" href="noodleman.css">
+	<link rel="icon" href="images/icon.png" type="image/x-icon">
+	<script src="logoAnimation.js"></script>
+</head>
+<body>
+	<div id="banner" onmouseover="animateOut()" onmouseout="animateIn()">
+		<img id="big" src="images/Logo_Big_NOT_FINAL.jpg" alt="Mr. Noodleman">
+	</div>
+	<object data="nav.html" width="85%"></object>
+	<main>
+		<div id="content">
+			<h2>Sign up to recieve updates via E-mail</h2>
+			<p><i>Required elements are marked with an asterisk (*)</i></p>
+			<form action="http://webdevbasics.net/scripts/demo.php">
+				<label for="name">* Name:</label></br><input type="text" name="name" required="required"></input></br></br>
+				<label for="email">* E-mail:</label></br><input type="email" name="email"></input></br></br>
+				<label for="feedback">&nbsp;&nbsp;Any comments?</label></br><textarea name="feedback" cols="30" rows="5"></textarea></br></br>
+				<input type="submit"></input>&nbsp;<input type="reset">
+			</form>
+		</div>
+	</main>
+<footer>
+	<p>copyright &copy;2019 Ethan Shilo-Draper</p>
+</footer>
+</body>
+</html>

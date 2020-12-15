@@ -1,0 +1,53 @@
+<!--Ethan Shilo-Draper CIS-1151-T1-->
+<!DOCTYPE=html>
+<html>
+<head>
+	<meta name="description" content="Mr.Noodleman Webcomic">
+	<meta name="author" content="Ethan Shilo-Draper">
+	<meta name="keywords" content="webcomic,comic,story,surreal,art">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mr.Noodleman - Chapter list</title>
+	<link rel="stylesheet" href="noodleman.css">
+	<link rel="icon" href="images/icon.png" type="image/x-icon">
+	<script src="logoAnimation.js"></script>
+	<script src="UnderlineAnimation.js"></script>
+</head>
+<body>
+	<div id="banner" onmouseover="animateOut()" onmouseout="animateIn()">
+		<img id="big" src="images/Logo_Big_NOT_FINAL.jpg" alt="Mr. Noodleman">
+	</div>
+	<object data="nav.html" width="85%"></object>
+	<main>
+		<div id="content">
+			<h1><u>Chapter List</u></h1></br>
+			<table>
+				<tr>
+					<th>Chapter</th>
+					<th>Title <i>(link)</i></th>
+				</tr>
+				<tr>
+					<td>Chapter 1</td>
+					<td id = "underline1" class="title">
+						<a href="chapters/chapter1.html" onmouseover="underlineIn(1)" onmouseout="underlineOut(1)">Pilot</a></br>
+					</td>
+				</tr>
+				<tr>
+					<td>Chapter 2</td>
+					<td id = "underline2" class="title">
+						<a onmouseover="underlineIn(2)" onmouseout="underlineOut(2)" href="chapters/chapter2.html">Fish head</a></br>
+					</td>
+				</tr>
+				<tr>
+					<td>Chapter 3</td>
+					<td id = "underline3" class="title">
+						<a onmouseover="underlineIn(3)" onmouseout="underlineOut(3)" href="chapters/chapter3.html">Untitled</a></br>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</main>
+<footer>
+	<p>copyright &copy;2019 Ethan Shilo-Draper</p>
+</footer>
+</body>
+</html>
